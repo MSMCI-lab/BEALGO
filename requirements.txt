@@ -1,0 +1,2 @@
+# No external dependencies required
+# BEALGO uses only Python standard library
