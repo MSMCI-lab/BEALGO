@@ -156,7 +156,7 @@ print("P(exactly {1,3} compromised):", exact_probs[frozenset([1,3])])
 
 ## License
 
-[Please specify license information]
+MIT License
 
 ## Citation
 
