@@ -72,7 +72,7 @@ Main function that computes the joint PMF over type-count vectors.
 
 **Parameters:**
 - `depth`: Number of propagation rounds (L ≥ 0)
-- `V`: Iterable of nodes (any hashable type)
+- `V`: Nodes 
 - `node_types`: Dict mapping nodes to type labels
 - `Q`: Dict of edge probabilities `{(u,v): q_uv}`
 - `independent_p`: Dict of per-node direct probabilities (alternative to `direct_law`)
@@ -121,9 +121,8 @@ See `example3_4.py` for a complete working example with an 8-node network divide
 
 ## Performance Notes
 
-- **Complexity**: Exponential in |V| due to exact enumeration
+- **Complexity**: See the paper for the discussion
 - **Optimization**: Memoization reduces redundant computations
-- **Scalability**: Practical for networks with ~10-15 nodes
 - **Memory**: Caches intermediate results for efficiency
 
 ## Advanced Usage
@@ -155,10 +154,6 @@ exact_probs = meta["P_exact"]
 print("P(exactly {1,3} compromised):", exact_probs[frozenset([1,3])])
 ```
 
-## Contributing
-
-This is a research collaboration between multiple institutions. For questions or contributions, please contact the authors.
-
 ## License
 
 [Please specify license information]
@@ -170,11 +165,3 @@ If you use this code in your research, please cite:
 ```bibtex
 [Citation information to be added]
 ```
-
-## Authors
-
-- [Author names and affiliations to be added]
-
-## References
-
-[Relevant papers and theoretical background to be added]
