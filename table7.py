@@ -23,6 +23,7 @@ CORRIDORS = {
     "P2": [(5,6),(6,7)],
     "P3": [(1,4),(4,6),(6,7)],
     "P4": [(1,4),(4,7)],
+    "P5": [(1,2),(2,3),(3,4),(4,6),(6,7)],  
 }
 C_UNION_NODES = sorted({n for edges in CORRIDORS.values() for e in edges for n in e})
 
